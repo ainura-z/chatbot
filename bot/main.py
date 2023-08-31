@@ -3,7 +3,10 @@ import time
 import telebot
 
 
-token = ''
+token = os.environ.get('BOT_TOKEN')
+if token==None:
+    print('Environment value trouble! Shutting down...')
+    exit()
 bot = telebot.TeleBot(token)
 step = -1
 
