@@ -5,9 +5,9 @@
 2. Скрипт model.py отвечает за генерацию продолжения диалога на основе введенных данных от пользователя. Для использования модели в скрипте model.py надо скачать модель с Google Диска (https://drive.google.com/file/d/193AXRQ2VsQQf1gmtImSGjokwU6Qs-Yw6/view?usp=sharing) и поместить в папку "bot".
 
 # Docker
-Telegram Bot обернут в Docker. Для использования докера следуйте следующим инструкциям:
+Telegram Bot обернут в Docker. Docker создавался в Windows. Для использования докера следуйте следующим инструкциям:
 1. Установить докер.
 2. Заклонить репозиторий в удобную для вас папку.
 3. Редактировать Dockerfile, указав ваш токен от телеграм бота вместо X: ENV BOT_TOKEN = X.
-4. run docker build -t chatbot .
-5. 
+4. run `docker build -t chatbot .`
+5. run `docker run -p 8000:8080 chatbot`
