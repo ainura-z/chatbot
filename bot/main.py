@@ -1,6 +1,7 @@
 from model import get_response
 import time
 import telebot
+import os
 
 
 token = os.environ.get('BOT_TOKEN')
