@@ -1,0 +1,4 @@
+pip               
+pyTelegramBotAPI  
+torch
+transformers
